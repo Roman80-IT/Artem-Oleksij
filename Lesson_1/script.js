@@ -1,10 +1,10 @@
-// https://github.com/ArtemRysich/Group_77
+// === ARTEM ===
 
+// https://github.com/ArtemRysich/Group_77
 
 // https://developer.mozilla.org/en-US/
 // https://uk.javascript.info/
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
-
 
 // console.log('Hello world');
 // let value;
@@ -15,7 +15,7 @@
 // console.log(3 === "3"); // Number vs String
 // console.log(3 == "3");  // Number vs Number
 
-//  
+//
 // 1 undefined => false
 // 2 null      => false
 // 3 0         => false
@@ -23,11 +23,10 @@
 // 5 clg       => false
 // 6 false     => false
 
-// console.log(Boolean("false")); => 
+// console.log(Boolean("false")); =>
 // console.log(!!"false");
 
 // var
-
 
 // const a = 10;
 // // a = 15
@@ -39,8 +38,6 @@
 // var a = 10;
 // console.log(a);
 
-
-
 // Примітивні типи даних - імутабельні типи даних
 // 1 Number
 // 2 String
@@ -48,16 +45,44 @@
 // 4 Undefined
 // 5 Null
 
-
 // const a = 10;
 
 // a = a + 2;
 // a = 12;
 // a += 2
 
+//! ==============================
 
+// === OLEKSIJ ===
 
+// let a = "5"; // string
+// let b = 5; // number
 
+// console.log(a == b); // "5" == "5" -> true
+// // порівнювати різні типи неможливо, тому цей оператор приведе все до одного типу
+
+// console.log(a === b); // a: string === b: number -> string !== number -> false
+
+// console.log(100 - 2 - "30"); //68
+// console.log(100 + 2 + "30"); //"10230"
+// // + це оператор конкатенації строк і коли він стоїть біля стрінга, сусідні операнди перетворюються на строки і вони склеюються між собою
+// // всі інші математичні оператори при роботі з числом і строкою перетворять строку на число і на виході ви отримаєте число
+
+// const username = "Al ex ex";
+
+// console.log(username.indexOf("ex"));
+
+// console.log(typeof NaN);
+
+// console.log(NaN === NaN);
+// console.log(NaN == NaN);
+// //NaN не дорівнює саме собі
+
+// const n = Number("27.5px");
+
+// console.log(Number.isNaN(n));
+
+//! ==============================
 
 // Example 1 - Математичні оператори
 // Виведи на екран загальну кількість яблук та винограду. Різницю яблук та винограду.
@@ -65,20 +90,24 @@
 // const apples = 47;
 // const grapes = 135;
 // const total = apples + grapes;
-// console.log(total)
-// const diff = grapes - apples;
-// console.log(diff)
+// console.log(total);
+// // const diff = grapes - apples;
+// const diff = Math.abs(apples - grapes);  //по модулю
+// console.log(diff);
 
-
+//! ==============================
 
 // Example 2 - Комбіновані оператори
 // Заміни вираз перевизначення комбінованим оператором +=.
 
 // let students = 100;
-// students = students + 50;
-// students += 50;
+// // students = students + 50;
+// students += 50;    //скорочений запис
+// students *= 2;
+// students /= 3;
 // console.log(students);
 
+//! ==============================
 
 // Example 3 - Пріоритет операторів
 // Розбери пріоритет операторів в інструкції привласнення значення змінної result.
@@ -86,6 +115,7 @@
 // const result = 108 + 223 - 2 * 5;
 // console.log(result);
 
+//! ==============================
 
 // Example 4 - Клас Math
 // Напиши скрипт, який виводить у консоль заокруглені вгору/вниз і т.д. значення змінної value. Використовуй методи Math.floor(), Math.ceil() та Math.round(). Перевір що буде в консолі при значеннях 27.3 та 27.9.
@@ -95,6 +125,8 @@
 // console.log(Math.ceil(value)); // Округлить завжди в сторону більшого значення
 // console.log(Math.floor(value)); // Округлить завжди в сторону меньшого значення
 // console.log(Math.round(value)); // Округлить завжди по математичному принципу
+
+//! ==============================
 
 // Example 5 - Шаблонні рядки
 // Склади речення за допомогою шаблонних рядків A has B bots in stock, де A, B - змінні вставлені в рядок.
@@ -112,32 +144,13 @@
 // const a = 2 * "3";
 // console.log(typeof a);
 
-
 // const b = 6 - '3';
 // console.log(typeof b);
-
 
 // const value = 10;
 // const value_2 = '15';
 
 // const result = value - Number(value_2);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const companyName = 'Cyberdyne Systems';
 // const repairBots = 150;
@@ -146,8 +159,7 @@
 // const message = `${companyName} has ${repairBots + defenceBots} bots in stock`;
 // console.log(message); // "Cyberdyne Systems has 200 bots in stock"
 
-
-
+//! ==============================
 
 // Example 6 - Методи рядків та чейнінг
 // Напиши скрипт, який розраховує індекс маси тіла людини. Для цього необхідно розділити вагу в кілограмах на квадрат висоти людини у метрах.
@@ -173,6 +185,7 @@
 // const bmi = Number((weight / height ** 2).toFixed(1));
 // console.log(bmi); // 28.8
 
+//! ==============================
 
 // Example 7 - Оператори порівняння та приведення типів
 // Яким буде результат виразів?
@@ -181,7 +194,7 @@
 
 // console.log(10 >= '7'); // true
 // // https://unicode-table.com/en/#0031
-// // console.log('2' >= '2');  
+// // console.log('2' >= '2');
 
 // console.log('2' < '12'); '2' < '1' 32 < 31
 
@@ -205,7 +218,6 @@
 
 // console.log('Papaya' === 'papaya'); 50 === 70
 
-
 // console.log('papaya' < 'papaub'); //false
 // p 70
 // a 61
@@ -217,6 +229,7 @@
 
 // console.log(undefined === null);
 
+//! ==============================
 
 // Example 8 - Логічні оператори
 // Яким буде результат виразів?
@@ -230,8 +243,7 @@
 // true   true   true
 // console.log(true && 0 && 'kiwi'); // 0
 
-
-// || АБО 
+// || АБО
 // Або повертає перше значення яке приведеться до true або останій false
 
 // console.log(true || 3); //true
@@ -254,17 +266,16 @@
 
 // console.log(null || (2 && 3) || 4);
 
-// 1 null => false 
+// 1 null => false
 // 2 || АБО ШУКАЄ ПЕРШИЙ TRUE
 // 3 2 && 3
 // 4 2 => true
 // 5 3 => true
 // 3 || 4 => 3
 
-
+//! ==============================
 
 // Example 9 - Значення за замовчуванням та оператор нульового злиття (??)
-
 
 //  || АБО він працює на 6 значень які повертають false
 // 1 undefined => false
@@ -273,7 +284,6 @@
 // 4 NaN       => false
 // 5 ''       => false
 // 6 false     => false
-
 
 // ?? він працює на 2 значення null undefined
 
